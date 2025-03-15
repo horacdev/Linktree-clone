@@ -1,12 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { LinkService } from './services/link.service';
+import { Link } from './models/link.model';
+import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './components/header/header.component';
+import { LinkCardComponent } from './components/link-card/link-card.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    CommonModule,
+    HeaderComponent, 
+    LinkCardComponent], // Adicione aqui],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'linktree-clone';
+  links: Link[] = [];
+
+  constructor(private linkService: LinkService) {
+    this.links = this.linkService.getLinks();
+  }
 }
