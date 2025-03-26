@@ -9,6 +9,8 @@
 }
 
 body {
-  background: #f0f2f5;
+  background: linear-gradient(0deg, #05383b, #19eec0) fixed;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }

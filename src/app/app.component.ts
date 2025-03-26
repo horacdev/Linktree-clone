@@ -11,7 +11,7 @@ import { LinkCardComponent } from './components/link-card/link-card.component';
   imports: [
     CommonModule,
     HeaderComponent, 
-    LinkCardComponent], // Adicione aqui],
+    LinkCardComponent], 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
