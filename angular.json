@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "/",
+            "baseHref": "/linktree-clone/",
+            "deployUrl": "/linktree-clone/",
             "outputPath": "dist/linktree-clone",
             "index": "src/index.html",
             "browser": "src/main.ts",
