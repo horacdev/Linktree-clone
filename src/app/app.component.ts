@@ -4,6 +4,7 @@ import { Link } from './models/link.model';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { LinkCardComponent } from './components/link-card/link-card.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { LinkCardComponent } from './components/link-card/link-card.component';
   imports: [
     CommonModule,
     HeaderComponent, 
-    LinkCardComponent], 
+    LinkCardComponent,
+    FooterComponent], 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

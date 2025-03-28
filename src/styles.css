@@ -7,10 +7,33 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
 body {
   background: linear-gradient(0deg, #05383b, #19eec0) fixed;
   min-height: 100vh;
   margin: 0;
-  padding: 0;
+  position: relative;
+  display: flex;          
+  flex-direction: column; 
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: env(safe-area-inset-bottom) ;
+}
+app-root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+  padding-bottom: 1rem;
+}
+app-footer {
+  margin-top: auto; 
+  width: 100%;
 }
