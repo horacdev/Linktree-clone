@@ -12,7 +12,6 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 body {
   background: linear-gradient(0deg, #36c3ca, #2494b1) fixed;
@@ -34,6 +33,7 @@ app-root {
 main {
   flex: 1;
   padding-bottom: 1rem;
+  overflow-y: auto;
 }
 app-footer {
   margin-top: auto; 
