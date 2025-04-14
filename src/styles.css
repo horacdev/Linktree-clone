@@ -12,9 +12,10 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 body {
-  background: linear-gradient(0deg, #05383b, #19eec0) fixed;
+  background: linear-gradient(0deg, #36c3ca, #2494b1) fixed;
   min-height: 100vh;
   margin: 0;
   position: relative;
@@ -25,9 +26,10 @@ body {
   padding-bottom: env(safe-area-inset-bottom) ;
 }
 app-root {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
 }
 main {
   flex: 1;
