@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   profile = {
     name: 'Horácio Paganini',
-    bio: 'Essa aqui é minha arvore de links,\n não tenho muitos...\n mas o projeto ficou legal 😁',
+    bio: 'Olá, estou aprendendo a programar 😁\n Esses são os meus links:',
     avatar: 'https://avatars.githubusercontent.com/u/201837471?s=200&v=4'
   };
 }

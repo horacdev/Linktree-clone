@@ -10,7 +10,6 @@
 
 html {
   height: 100%;
-  overflow: hidden; 
   -webkit-text-size-adjust: 100%; 
 }
 
@@ -18,17 +17,23 @@ body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(0deg, #36c3ca, #2494b1);
   min-height: 100vh;
-  min-height: -webkit-fill-available; 
+  min-height: -webkit-fill-available;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  position: fixed; 
+  position: relative; 
+
+}
+body::before {
+  content: '';
+  position: absolute; 
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: -1;
+  background: inherit; 
 }
-
 app-root {
   flex: 1;
   display: flex;
@@ -38,12 +43,13 @@ app-root {
   height: -moz-available;
   height: -webkit-fill-available;
   height: fill-available;
+  
 }
 
 main {
   flex: 1;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch; 
   padding: 1rem;
   width: 100%;
   max-width: 600px;
